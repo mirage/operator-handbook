@@ -1,0 +1,10 @@
+[book]
+authors = ["Camels from Marocco"]
+language = "en"
+multilingual = false
+src = "src"
+title = "MirageOS operator manual"
+
+[preprocessor.graphviz]
+command = "mdbook-graphviz"
+output-to-file = false
