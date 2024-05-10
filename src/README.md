@@ -114,5 +114,9 @@ We briefly discussed the different MirageOS backends, and have the focus on the
 hypervisor backend.
 
 This handbook is not complete, suggestions are welcome. The initial chapters is
-focused on the struggle with network setups that we encounter when testing
-unikernels.
+focused on network setups that were encountered when testing unikernels, e.g.
+at our annual [MirageOS retreat](https://retreat.mirage.io).
+
+Please file suggestions as an
+[issue](https://github.com/mirage/operator-handbook) on GitHub, or a pull
+request.
