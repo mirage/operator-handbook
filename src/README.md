@@ -83,8 +83,8 @@ system calls to be executed. This does not require a hypervisor, and can be
 executed similar to a container. From a security perspective, the attack surface
 is slightly bigger - it is the seccomp implementation. From the network
 operations perspective, this is the same as what we discuss in this handbook.
-Since we don't provide pre-build unikernel binaries for seccomp, you'll need
-to compile them yoursel. And instead of executing `solo5-hvt`, you need to run
+Since we don't provide pre-built unikernel binaries for seccomp, you'll need
+to compile them yourself. And instead of executing `solo5-hvt`, you need to run
 `solo5-spt`.
 
 ### [Xen](https://xenproject.org/)
@@ -97,7 +97,7 @@ different, thus we won't focus on that here.
 ### [Muen](https://muen.sk) separation kernel
 
 The Muen separation kernel is developed in Ada/SPARK - which includes a
-verification framework. It is a great project, and if you plan to deply
+verification framework. It is a great project, and if you plan to deploy
 high-assurance solutions, you should dive deeper into Muen. Since its operation
 and configuration is custom, we won't discuss it further.
 
