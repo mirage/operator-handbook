@@ -86,14 +86,14 @@ host system, and configure it, to communicate with the unikernel guest system,
 
 Linux:
 ```
-$ ip tuntap add tap0 mode tap
-$ ip tuntap set dev tap0 up
+$ sudo ip tuntap add tap0 mode tap
+$ sudo ip tuntap set dev tap0 up
 ```
 
 FreeBSD:
 ```
-$ sysctl net.link.tap.up_on_open=1
-$ ifconfig tap create #will return the device name, i.e. tap0
+$ doas sysctl net.link.tap.up_on_open=1
+$ doas ifconfig tap create #will return the device name, i.e. tap0
 ```
 
 Executing the unikernel:
@@ -109,12 +109,12 @@ address to the configured tap interface:
 
 Linux:
 ```
-$ ip addr add 10.0.0.1/24 dev tap0
+$ sudo ip addr add 10.0.0.1/24 dev tap0
 ```
 
 FreeBSD:
 ```
-$ ifconfig tap0 10.0.0.1/24
+$ doas ifconfig tap0 10.0.0.1/24
 ```
 
 From the command-line, you should now be able to communicate with the unikernel:
