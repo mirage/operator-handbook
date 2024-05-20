@@ -92,21 +92,21 @@ to compile them yourself. And instead of executing `solo5-hvt`, you need to run
 MirageOS was originally developed by some people who also worked on Xen. Xen is
 a great hypervisor, but very different from the modern ones, which rely on CPU
 features. The Xen target is used with MirageOS, but the network setup is very
-different, thus we won't focus on that here.
+different, thus we won't focus on that in this handbook.
 
 ### [Muen](https://muen.sk) separation kernel
 
 The Muen separation kernel is developed in Ada/SPARK - which includes a
 verification framework. It is a great project, and if you plan to deploy
 high-assurance solutions, you should dive deeper into Muen. Since its operation
-and configuration is custom, we won't discuss it further.
+and configuration is custom, we won't discuss it further in this handbook.
 
 ### [Virtio](https://wiki.libvirt.org/Virtio.html)
 
 Virtio allows to run virtual machines on the cloud, where the hypervisor is
 managed for you by some company. This allows to deploy MirageOS onto the cloud.
 Since the configuration again is very different, we don't go into further
-details. We plan to write a chapter on virtio, though.
+details. But we plan to write a chapter on virtio for this handbook.
 
 ## Conclusion
 
